@@ -1,48 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <meta name="viewport" class="foundation-mq" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
         <link rel="stylesheet" href="./assets/css/style.css">
-        <title>Weather Forecasts</title>
+        <title>California Surf Forecasts</title>
     </head>
     
     <body>
         <header class="bg-dark text-white text-center p-2">
-            <h1>Weather Dashboard</h1>
+            <h1>California Surf Forecasts</h1>
         </header>
-    
-        <section class="container-fluid">
-            <div class="row">
-                <div class="search-column col-12 col-md-3 p-3">
-                    <form class="border p-2" id="search-city">
-                      <h3>Search for a City</h3>
-                      <input class="input-form" id="city" type="text" autofocus="true">
-                      <button class="btn" type="submit">Search</button>
-                    </form>
-                    <div class="border past-search" id="past-search-button"></div>
-                </div>
-    
-                <div class="col-12 col-md-9">
-                  <div class="row border searched-city" id="forecast-current">
-                    <div class="col-12">
-                        <h2 id="selected-city"></h2>
-                        <div id="weather-container" class="list-group"></div>
+        </div>
+        <div class="row">
+            <div class="search-column small-4 columns">
+                <form class="border p-2" id="search-city">
+                    <h3>Search for an area in California</h3>
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <select id="area-selection">
+                                <option value="husker">San Francisco</option>
+                                <option value="starbuck">North San Diego County</option>
+                                <option value="hotdog">South San Diego County</option>
+                                <option value="apollo">Los Angeles/ Manhattan Beach</option>
+                                <option value="apollo">Example Location</option>
+                                <option value="apollo">Example Location</option>
+                            </select>
+                        </div>
                     </div>
-                  </div> 
-                  <div class="row border" id="five-day">
-                     <h2 class="col-12" id="forecast"></h2>
-                     <div class="d-flex" id="five-day-container"></div>
-                  </div>
-                </div>  
+                    <button class="btn" type="submit">Search</button>
+                </form>
+                <div class="border past-search" id="past-search-button"></div>
             </div>
-        </section>
-    
+
+            <div class="small-8 columns">
+                <div class="row border searched-city" id="forecast-current">
+                <div class="col-12">
+                    <h2 id="selected-city"></h2>
+                    <div id="weather-container" class="list-group"></div>
+                </div>
+                </div> 
+                <div class="row border" id="five-day">
+                    <h2 class="col-12" id="forecast"></h2>
+                    <div class="d-flex" id="five-day-container"></div>
+                </div>
+            </div>  
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        <script src="./script.js"></script>
+        <script src="./assets/js/script.js"></script>
     </body>
     </html>

@@ -1,0 +1,25 @@
+.text-white {
+    color: white;
+}
+
+header h1 {
+    font-weight:bold;
+}
+
+.bg-dark {
+    background-color: rgb(57, 61, 68);
+}
+
+form {
+    border: solid grey;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+button {
+    background-color: rgb(224, 224, 224);
+    padding: 8px;
+    border-radius: 3px;
+
+}
